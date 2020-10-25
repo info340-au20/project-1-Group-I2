@@ -1,10 +1,10 @@
 main p {
-    margin: 40px;
+    margin: 100px;
     margin-left: 80px;
     margin-right: 80px;
 }
 
-.imageOfDemo {
+ .imageOfDemo {
     width: 320px;
     height: 300px;
     margin-bottom: 15px;
@@ -13,14 +13,16 @@ main p {
 .imageOfRisk {
     width: 300px;
     height: 300px;
-    margin: 10px 10px;
-}
+    margin-bottom: 15px;
+}  
 
-.dropdown {
+ .dropdown {
     margin-top: 150px;
+    
     position: fixed;
-    left: 50px;
-    display: inline-block;
+    left: 0;
+    display: block;
+    margin-bottom: 10px;
   }
   
   .dropdown-content {
@@ -50,10 +52,12 @@ main p {
     background-color: #3e8e41;
   }
 
-  .rateOfCancers{
-      margin-top: 100px;
-      width: 700px;
-      height: 500px;
+  .imageOfCancerRate{
+      margin-top: 10px;
+      width: 1000px;
+      height: 750px;
+      margin-left: 0;
+
   }
 
 div.titel{
@@ -105,13 +109,14 @@ header div p span{
 }
 
 footer{
-  height: 100px;
+  height: auto;
   background-color: rgba(30, 49, 110, 0.932);
 }
 
 .copyright{
   color: orange;
   font-size: 1em;
+  margin: 2em;
 }
 
 
