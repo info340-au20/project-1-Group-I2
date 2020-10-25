@@ -55,3 +55,7 @@ main p {
       width: 700px;
       height: 500px;
   }
+
+div#title{
+  margin-left: 2rem;
+}
