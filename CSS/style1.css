@@ -19,8 +19,9 @@ main p {
 .dropdown {
     margin-top: 150px;
     position: fixed;
-    left: 50px;
-    display: inline-block;
+    left: 0;
+    display: block;
+    margin-bottom: 30px;
   }
   
   .dropdown-content {
@@ -54,4 +55,9 @@ main p {
       margin-top: 100px;
       width: 700px;
       height: 500px;
+  }
+
+  .imageOfCancerRate {
+      width: 900px;
+      height: 600;
   }

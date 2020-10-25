@@ -5,10 +5,10 @@
   <title>Risk factors of Cancer</title>
   
 
-  <title>group-I2's Draft</title>
+  <title>group-I2's Draft: Risk factors of cancers</title>
   <meta charset="utf-8">
   <meta name="author" content="Yufei Xia(Lexi), Skye Tian, Sinan Zhao">
-  <meta name="description" content="This page presents the draft for Group 12's project 1">
+  <meta name="description" content="This page presents the draft for Group 12's project： Risk factors of cancers">
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="CSS/style1.css">
@@ -16,6 +16,10 @@
   href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" 
   integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" 
   crossorigin="anonymous">
+
+  <head profile="http://www.w3.org/2005/10/profile">
+<link rel="icon" type="image/png" href="img/favicon.png" />
+
 </head>
 <body>
     <!-- <header class="jumbotron jumbotron-fluid bg-dark text-white">
@@ -23,22 +27,33 @@
 
     </header> -->
 
-     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #e3f2fd;" >
+        <a class="navbar-brand" href="#">
+            <img src="img/favicon.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            Cancer
+          </a>
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
+            <li class="nav-item text-white">
               <a class="nav-link" href="#">Main Page <span class="sr-only">(current)</span></a>
             </li>   
-            <li class="nav-item">
+            <li class="nav-item text-white">
                 <a class="nav-link" href="#">About</a>
               </li>         
           </ul>
 
         </div>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+
       </nav> 
 
 
@@ -53,43 +68,38 @@
                     <div class="col col-md col-xl-6 d-flex">
                         <div class="card">
                             <img class="imageOfDemo" src="img/population_metrics.jpg" alt="image of demographic bar chart">
-                            <h2 class="card-title text-center">Demographics</h2>
-
+                            <div class="card-body">
+                                <h2 class="card-text text-center">Demographics</h2>
+                            </div>  
                         </div>
                     </div>
 
                     <div class="col col-md col-xl-6 d-flex">
                         <div class="card">
                             <img class="imageOfRisk" src="img/factor.png" alt="image of risk icon">
-                            <h2 class="card-title text-center">Risk factors</h2>
+                            <div class="card-body">
+                                <h2 class="card-text text-center">Risk factors</h2>
+                            </div>
                         </div>
                     </div>
             </div>
 
 
-
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="dropdown">
-                            <button class="dropbtn">Rate of New Cancers</button>
-                            <div class="dropdown-content">
-                            <a href="#">Rate of New Cancers</a>
-                            <a href="#">Rate of New Deaths</a>
-                            <a href="#">Number of New Cancers</a>
-                            <a href="#">Number of New Deaths</a>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="col">
-                        <img src="img/rate_cancer.jpg" class="rateOfCancers" alt="image of rate of new cancers">
-                    </div>
-                </div>
+    <div>
+        <div class="dropdown">
+            <button class="dropbtn">Rate of New Cancers</button>
+            <div class="dropdown-content">
+            <a href="#">Rate of New Cancers</a>
+            <a href="#">Rate of New Deaths</a>
+            <a href="#">Number of New Cancers</a>
+            <a href="#">Number of New Deaths</a>
             </div>
-
         </div>
-
-
+    
+        <img class="imageOfCancerRate" src="img/rate_cancer.jpg" class="rateOfCancers2" alt="image of rate of new cancers">
+    </div>
+     
+ 
           
 
 
@@ -105,6 +115,14 @@
         </div>
 
     </main>
+
+<!-- 加入自己的contact info -->
+    <footer>
+        <p>
+            Author: Ciel Zhao, Skye Tian, Lexi Xia
+        </p>
+        <p><a href="mailto:sinanz2@uw.edu">sinanz@uw.edu</a></p>
+    </footer>
 </body>
 
 
