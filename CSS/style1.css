@@ -56,6 +56,62 @@ main p {
       height: 500px;
   }
 
-div#title{
+div.titel{
   margin-left: 2rem;
 }
+
+.quote{
+  color: rgba(219, 219, 93, 0.966);
+  text-align: center;
+}
+
+.quote p{
+  color: whitesmoke;
+}
+
+.intro{
+  background-size: 1400px 800px;
+  background-image:url('../img/map.jpg');
+  opacity: 60%;
+  color: black;
+}
+
+header div p span{
+  font-style: italic;
+}
+
+
+.title2 h1{
+  color:rgba(219, 219, 93, 0.966);
+  text-align: center;
+  text-transform: uppercase;
+  background-color: black;
+  margin: 0%;
+  opacity: 80%;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+.footer-top{
+  margin-left: 5rem;
+  color: orange;
+}
+
+.footer-top a{
+  color: white;
+}
+
+footer{
+  height: 100px;
+  background-color: rgba(30, 49, 110, 0.932);
+}
+
+.copyright{
+  color: orange;
+  font-size: 1em;
+}
+
+
