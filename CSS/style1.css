@@ -1,6 +1,10 @@
  * {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+.responsive {
+  width: auto;
+}
  
  .imageOfDemo {
     width: 100%;
@@ -150,9 +154,6 @@ h2 {
 @media (min-width: 598px) {
   #hamburger-menu {
     display: none;
-  }
-  .card-body {
-    background-color:antiquewhite;
   }
 }
 
