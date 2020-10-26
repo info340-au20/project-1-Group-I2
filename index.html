@@ -72,30 +72,47 @@
 
       </nav>  -->
 
-      <nav>
-        <ul>
-            <li><a href="#"><span class="logo" aria-hidden="true">&nbsp</span> Cancer</a></li>
-            <li><a href="#Overview">Overview</a></li>
-            <li><a href="#About">About</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="img/favicon.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            Cancer
+          </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+            <a class="nav-link" href="index.html">Main Page<span class="sr-only">(current)</span></a>
+            </li>   
+            <li class="nav-item">
+                <a class="nav-link" href="landing.html">About</a>
+            </li>         
         </ul>
-        <div class="searchBox" role="search">
-            <input type="text" placeholder="Search...">
-            <button>
-                <i class="fas fa-search fa-flip-horizontal" aria-label="a search button"></i>
-            </button>
         </div>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
     </nav>
 
-    <header class="header1">
+
+
+    <header class="about-header1">
         <div class="container">
-            <h1>
-                Demographics and risk factors of cancers 
-            </h1>
-            <p class="text-justify">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur error quibusdam modi animi quam corporis possimus nam, dignissimos repudiandae tempora ab natus totam corrupti quos provident culpa laboriosam alias rerum.
-            </p>
+          <h1>Demographics and risk factors of cancers</h1>
+          <p class="lead">Facts & Satistics</p>
         </div>
     </header>
+
+    <header class="quote jumbotron jumbotron-fluid bg-dark">
+        <div class="container">
+          <h1>Cancer is possibly our normalcy, our final destiny...</h1>
+          <p class="lead">Siddhartha Mukherjee -- <span>The Emperor of all Maladies</span></p>
+        </div>
+    </header>
+
 
     <main>
         <!--
@@ -106,92 +123,106 @@
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur error quibusdam modi animi quam corporis possimus nam, dignissimos repudiandae tempora ab natus totam corrupti quos provident culpa laboriosam alias rerum.
         </p> -->
 
+        <section class="text">
+            <h2>What we know about risk factors</h2>
+            <p>
+                It is usually not possible to know exactly why one person develops cancer and another doesn’t. But research has shown that certain risk factors may increase a person’s chances of developing cancer.
+            </p>
+            <p>
+                Cancer risk factors include exposure to chemicals or other substances, as well as certain behaviors. They also include things people cannot control, like age and family history. A family history of certain cancers can be a sign of a possible inherited cancer syndrome.
+            </p>
+            <p>
+                The list below includes the most-studied known or suspected risk factors for cancer.
+            </p>
+            <ul>
+                <li>
+                    Age
+                </li>
+                <li>
+                    Alcohol
+                </li>
+                <li>
+                    Cancer-Causing Substances
+                </li>
+                <li>
+                    Chronic Inflammation
+                </li>
+                <li>
+                    Diet
+                </li>
+                <li>
+                    Hormones
+                </li>
+                <li>
+                    Infectious Agents
+                </li>
+                <li>
+                    Obesity
+                </li>
+                <li>
+                    Tobacco
+                </li>
+            </ul>
+            <h2>Learn more  statistics</h2>
+        </section>
+
+        </section>
+
             <section>
-                <div class="card-container">
-                <div class="row">
-                <!-- Card 1 -->
-                    <div class="col col-md-6 col-xl-6 d-flex">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                        <div class="row">
-                            <div class="col-sm-auto">
-                            <img class="imageOfDemo" src="img/population_metrics.jpg" alt="image of demographic bar chart">
-                            </div>
-                            
-                            <div class="col-sm">
-                            <h2 class="card-title">Demographics</h2>
-                            <a href="#" class="btn btn-dark">More</a>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-            
-                <!-- Card 2 -->
-                    <div class="col col-md-6 col-xl-6 d-flex">
-                        <div class="card mb-4">
-                            <div class="card-body">
-                            <div class="row">
-                                <div class="col-sm-auto">
-                                    <img class="imageOfRisk" src="img/factor.png" alt="image of risk icon">
-                                </div> 
-                
-                                <div class="col-sm">
-                                <h2 class="card-title">Risk</h2>
-                                <a href="#" class="btn btn-dark">More</a>
+                <div class="container">
+                    <div class="row">
+                        <!-- Card 1 -->
+                                <div class="col col-md-6 col-xl-6 d-flex">
+                                    <div class="card mb-4">
+                                        <div class="card-body">
+                                            <img class="imageOfDemo" src="img/population_metrics.jpg" alt="image of demographic bar chart">
+                                            <div class="row">    
+                                                <div class="col">
+                                                    <h2 class="card-title">Demographics</h2>
+                                                </div> 
+                                                <div class="col">
+                                                    <a href="#" class="btn btn-dark">More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                
+                    
+                        <!-- Card 2 -->
+                                <div class="col col-md-6 col-xl-6 d-flex">
+                                    <div class="card mb-4">
+                                        <div class="card-body">
+                                            <img class="imageOfRisk" src="img/factor.png" alt="image of risk icon">
+                                            <div class="row">    
+                                                <div class="col col-8">
+                                                    <h2 class="card-title">Risk Factors</h2>
+                                                </div> 
+                                                <div class="col col-4">
+                                                    <a href="#" class="btn btn-dark">More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>  
-            </section>
-     
-            
 
-<!---
-        <div class="container">
-            <div class="row">
-                <div class="col col-md-6 col-xl-6 d-flex">
-                     <div class="card">
-                        <img class="imageOfDemo" src="img/population_metrics.jpg" alt="image of demographic bar chart">
-                        <div class="card-body">
-                            <h2 class="card-text text-center">Demographics</h2>
-                        </div>  
-                    </div>
+                      
+
+
+
+        
+
+        <section>
+            <div class="dropdown">
+                <button class="dropbtn">Rate of New Cancers</button>
+                <div class="dropdown-content">
+                <a href="#">Rate of New Cancers</a>
+                <a href="#">Rate of New Deaths</a>
                 </div>
-
-                <div class="col col-md col-xl-6 d-flex">
-                     <div class="card">
-                        <img class="imageOfRisk" src="img/factor.png" alt="image of risk icon">
-                        <div class="card-body">
-                            <h2 class="card-text text-center">Risk factors</h2>
-                        </div>
-                    </div>                    
-                </div>
-                
-            </div>  
-        </div>
--->
-
-
-        <div class="dropdown">
-            <button class="dropbtn">Rate of New Cancers</button>
-            <div class="dropdown-content">
-            <a href="#">Rate of New Cancers</a>
-            <a href="#">Rate of New Deaths</a>
-            <a href="#">Number of New Cancers</a>
-            <a href="#">Number of New Deaths</a>
             </div>
-        </div>
-    </div>
-
-    <div>
-    <img class="imageOfCancerRate" src="img/rate_cancer.jpg" class="rateOfCancers2" alt="image of rate of new cancers">
-    </div>
-    
-</div>
-
+            <img class="imageOfCancerRate" src="img/rate_cancer.jpg" class="rateOfCancers2" alt="image of rate of new cancers">
+        </section>
     </main> 
 
     <footer>
