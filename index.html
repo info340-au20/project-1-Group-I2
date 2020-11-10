@@ -46,20 +46,21 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-            <a class="nav-link" href="index.html">Main Page<span class="sr-only">(current)</span></a>
-            </li>   
-            <li class="nav-item">
-                <a class="nav-link" href="landing.html">About</a>
-            </li>         
-        </ul>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Main Page<span class="sr-only">(current)</span></a>
+                </li>   
+                <li class="nav-item">
+                    <a class="nav-link" href="landing.html">About</a>
+                </li>         
+            </ul>
         </div>
-        <form class="form-inline">
-            <label for="search"></label>
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+        
+        <!--Highlight search bar-->
+        <input type="text" id="search"/>
+        <button onClick="search(id)" id="highlight">
+            Highlight
+        </button>
 
     </nav>
 <!-- 
@@ -92,58 +93,60 @@
         <div class="row">
             <div class="col-md col-lg">
                 <h2 class="header2">What we know about risk factors</h2>
-                <p>
-                    Cancer risk factors include exposure to chemicals or other
-                    substances, as well as certain behaviors. 
-                    They also include things people cannot control, 
-                    like age and family history. A family history of certain
-                    cancers can be a sign of a possible inherited cancer syndrome.
-                    (National Cancer Institute)
-                </p>
-                <p>
-                    For example, alochohol. 
-                    "All types of alcoholic drinks, including red and white wine, 
-                    beer, cocktails, and liquor, are linked with cancer. 
-                    The more you drink, the higher your cancer risk. When you drink alcohol, 
-                    your body breaks it down into a chemical called acetaldehyde. 
-                    Acetaldehyde damages your DNA and prevents your body from repairing the damage.
-                    DNA is the cell’s “instruction manual” that controls a cell’s 
-                    normal growth and function. When DNA is damaged, 
-                    a cell can begin growing out of control and create a cancer tumor."
-                    (Alcohol and Cancer, CDC)
-                </p>
-                <p>
-                    The list below includes the most-studied known or suspected risk factors for cancer.
-                </p>
-                <ul>
-                    <li>
-                        Age
-                    </li>
-                    <li>
-                        Alcohol
-                    </li>
-                    <li>
-                        Cancer-Causing Substances
-                    </li>
-                    <li>
-                        Chronic Inflammation
-                    </li>
-                    <li>
-                        Diet
-                    </li>
-                    <li>
-                        Hormones
-                    </li>
-                    <li>
-                        Infectious Agents
-                    </li>
-                    <li>
-                        Obesity
-                    </li>
-                    <li>
-                        Tobacco
-                    </li>
-                </ul>
+                <div id="text">
+                    <p>
+                        Cancer risk factors include exposure to chemicals or other
+                        substances, as well as certain behaviors. 
+                        They also include things people cannot control, 
+                        like age and family history. A family history of certain
+                        cancers can be a sign of a possible inherited cancer syndrome.
+                        (National Cancer Institute)
+                    </p>
+                    <p>
+                        For example, alochohol. 
+                        "All types of alcoholic drinks, including red and white wine, 
+                        beer, cocktails, and liquor, are linked with cancer. 
+                        The more you drink, the higher your cancer risk. When you drink alcohol, 
+                        your body breaks it down into a chemical called acetaldehyde. 
+                        Acetaldehyde damages your DNA and prevents your body from repairing the damage.
+                        DNA is the cell’s “instruction manual” that controls a cell’s 
+                        normal growth and function. When DNA is damaged, 
+                        a cell can begin growing out of control and create a cancer tumor."
+                        (Alcohol and Cancer, CDC)
+                    </p>
+                    <p>
+                        The list below includes the most-studied known or suspected risk factors for cancer.
+                    </p>
+                    <ul>
+                        <li>
+                            Age
+                        </li>
+                        <li>
+                            Alcohol
+                        </li>
+                        <li>
+                            Cancer-Causing Substances
+                        </li>
+                        <li>
+                            Chronic Inflammation
+                        </li>
+                        <li>
+                            Diet
+                        </li>
+                        <li>
+                            Hormones
+                        </li>
+                        <li>
+                            Infectious Agents
+                        </li>
+                        <li>
+                            Obesity
+                        </li>
+                        <li>
+                            Tobacco
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             <div class="col-md col-lg"> 
@@ -202,6 +205,20 @@
             </p>
         </div>
     </footer>
+
+    <!-- jQuery first, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- Our scripts -->
+    <script src="./js/index.js"></script>
 </body>
 </html>
 
