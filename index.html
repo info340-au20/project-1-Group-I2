@@ -13,6 +13,8 @@
   href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" 
   integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" 
   crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -33,6 +35,7 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
+
 </head>
 
 <body>
@@ -183,7 +186,7 @@
                                     <div class="col-sm">
                                         <h2 class="card-title">Risk factors</h2>
                                         <p class="card-text">See what risk factors can lead to cancers</p>
-                                        <a href="index2-2-1.html" class="btn btn-dark">Learn more</button></a>
+                                        <a href="" id = "riskbutton" class="btn btn-dark">Learn more</button></a>
                                     </div>
                                 </div>
                             </div>
@@ -191,7 +194,23 @@
                     </div>       
                 </div>   
             </div>  
-        </div>    
+        </div>   
+        <div class="information">
+        </div>
+
+        <div class="data_visualization" style="display: none">
+            <h3>Learn more about risk-associated cancers</h3>
+            <div class="dropdown">
+                <button class="dropbtn">Risk factors</button>
+                <div class="dropdown-content">
+                <a href="#">Alchohol-associated cancer</a>
+                <a href="#">Tobacco-associated cancers</a>
+                </div>
+            </div>
+            <img src="img/risk_alchohol.jpg" class="barchart" alt="bar chart of alcohol-associated cancer ">
+        </div>
+
+
     </main>
 
 
@@ -200,12 +219,14 @@
             <a href="https://www.thecurealliance.org/why-we-care/">Pictures</a>|
             <a href="https://gis.cdc.gov/Cancer/USCS/DataViz.html">Data</a>|
             <a href="https://github.com/info340-au20/project-1-Group-I2.git">Github Page</a>
+            <p>Data from <a href="https://gis.cdc.gov/Cancer/USCS/DataViz.html">CDC</a></p>
         </div>
         <div>
             <p class="copyright">
                 &copy;Copyright Info340 group-I2 | University of Washington
             </p>
         </div>
+
     </footer>
 
     <!-- jQuery first, then Bootstrap JS -->
@@ -219,8 +240,22 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
+
+    <script src="https://d3js.org/d3-dsv.v2.min.js"></script>
+    <script src="https://d3js.org/d3-fetch.v2.min.js"></script>
     <!-- Our scripts -->
     <script src="./js/index.js"></script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.4 /fetch.min.js"></script>
+  <!-- sha512-1yUGYJwZZKg/5M1i8F42RGeToSJho7ZOS4LsAYW8dmpclkJLcGL/dLCadS3pGoMpt8V70Y3YPwY8V0VMtlL0tg== -->
+  <!-- https://cdnjs.cloudflare.com/ajax/libs/es6-promise/2.2.0/es6-promise.min.js -->
+
+  <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.js"></script>
+
+
+
 </body>
 </html>
 

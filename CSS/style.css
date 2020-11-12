@@ -3,7 +3,7 @@
 }
 
 main {
-  margin-left: 10px;
+  margin-left: 10%;
 }
  
 
@@ -39,14 +39,24 @@ main {
 
  .dropdown {
     margin-top: 1em;
-    margin-left: 5%;
+    margin-left: 15.5%;
     position: fixed;
     display: block;
-    margin-bottom: 10px;
     padding-bottom: .5%;
   }
 
-
+  .information {
+    padding-top:5%;
+    padding-bottom:5%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    color: #778899;
+  }
+  
 
 
   
@@ -131,6 +141,13 @@ footer p {
   opacity: 60%;
   color: black;
 }
+
+.barchart{
+  margin: auto;
+  width: 70%;
+}
+.dropdown
+
 
 header div p span{
   font-style: italic;
@@ -223,6 +240,7 @@ footer{
 }
 
 
+
 .section1 {
     background-color: whitesmoke;
     padding: 20px;
@@ -238,6 +256,10 @@ footer{
     background-color: darkgrey;
 }
 
+
+h3 {
+  text-align: center;
+}
 @media (max-width: 598px) {
   .card-body {
     background-color:antiquewhite;

@@ -44,3 +44,71 @@ let tobacco = [
 	{"cancer_type":"Larynx", "tobacco-associated":3.0}
 ];
 console.log(demo, tobacco, alcohol);
+
+
+
+// // when clicking the button of know more about risk factor, show some statistics
+let buttonRisk = document.querySelector('#riskbutton');
+buttonRisk.addEventListener('click', function(event) {
+	document.querySelector('.information').textContent = '';
+
+	for (let j = 0; j < 4; j ++) {
+		renderInformation(j);
+	}
+
+	document.querySelector('.data_visualization').style.display = "block";
+
+	event.preventDefault();
+});
+
+
+function renderInformation(i) {
+	let paragraph = document.createElement('p');
+	document.querySelector('.information').append(paragraph);
+	d3.csv("/data/fetchData.csv").then(function(data) {
+		// let stats = JSON.stringify(data[0]);
+		paragraph.textContent = renderStats(
+			JSON.stringify(data[i].Risk), 
+			JSON.stringify(data[i].Cancer), 
+			JSON.stringify(data[i].numOfType),
+			JSON.stringify(data[i].cancer1),
+			JSON.stringify(data[i].cancer2),
+			JSON.stringify(data[i].cancer3))[0];
+			
+	})
+	.catch(renderError);
+
+	let paragraph2 = document.createElement('p');
+	document.querySelector('.information').append(paragraph2);
+	d3.csv("/data/fetchData.csv").then(function(data) {
+		paragraph2.textContent = renderStats(
+			JSON.stringify(data[i].Risk), 
+			JSON.stringify(data[i].Cancer), 
+			JSON.stringify(data[i].numOfType),
+			JSON.stringify(data[i].cancer1),
+			JSON.stringify(data[i].cancer2),
+			JSON.stringify(data[i].cancer3))[1];	
+	})
+	.catch(renderError);
+}
+
+function renderStats(risk, numCase, numOfType,cancer1, cancer2, cancer3) {
+	let arr = [];
+	arr[0] = "In the United States, approximately " + numCase + " new cases of cancer are related to " + risk + ".";
+	arr[1] = "Over " + numOfType + " types of cancer can be caused by " + risk + ", including " + cancer1 + ", " 
+	+ cancer2 + ", " + cancer3 + ".";
+	return arr;
+}
+
+
+function renderError(error) {
+	let alert = document.createElement('p');
+	document.querySelector('.information').appendChild(alert);
+	alert.textContent = error.message;
+	alert.classList.add("alert");
+	alert.classList.add('alert-danger');
+  }
+
+
+
+
