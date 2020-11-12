@@ -29,7 +29,7 @@ let alcohol = [
 ];
 
 let tobacco = [
-	{"cancer_type":"all", "tobacco-associated":181.1},
+	{"cancer_type":"all", "":181.1},
 	{"cancer_type":"Trachea, Lung and Bronchus", "tobacco-associated":55.3},
 	{"cancer_type":"Colon and Rectum", "tobacco-associated":36.8},
 	{"cancer_type":"Urinary Bladder", "tobacco-associated":19.1},
@@ -47,7 +47,7 @@ console.log(demo, tobacco, alcohol);
 
 
 
-// // when clicking the button of know more about risk factor, show some statistics
+ // when clicking the button of know more about risk factor, show some statistics
 let buttonRisk = document.querySelector('#riskbutton');
 buttonRisk.addEventListener('click', function(event) {
 	document.querySelector('.information').textContent = '';

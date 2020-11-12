@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Draft: Cancer Awareness</title>
     <meta charset="utf-8">
-  <meta name="author" content="Yufei Xia(Lexi), Skye Tian, Sinan Zhao">
-  <meta name="description" content="This page presents the draft for Group 12's project： Cancer Awareness">
+    <title>Draft: Cancer Awareness</title>
+    <meta name="author" content="Yufei Xia(Lexi), Skye Tian, Sinan Zhao">
+    <meta name="description" content="This page presents the draft for Group 12's project： Cancer Awareness">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="CSS/style.css">
-  <link rel="stylesheet" 
-  href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" 
-  integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" 
-  crossorigin="anonymous">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" 
+    integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" 
+    crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="icon" type="image/png" href="img/favicon.png" />
-
-
 
     <link
     href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@900&display=swap"
@@ -162,13 +160,14 @@
                             <div class="card mb-4"> 
                                 <div class="card-body">
                                     <div class="row">
-                                        <div class="col-sm-auto">
+                                        <div class="col-sm-auto">                                   
                                             <img class="pb-3" src="img/population_metrics.jpg" alt="image of the demographic chart">
                                         </div>
                                         <div class="col-sm">
                                             <h2 class="card-title">Demographics</h2>
                                             <p class="card-text">See the demographics of people with cancers</p>
-                                            <a href="index2-1.html" class="btn btn-dark">Learn more</button></a>
+                                            <!--<a href="index2-1.html" class="btn btn-dark">Learn more</button></a> -->
+                                            <a href="" id = "demobutton" class="btn btn-dark">Learn more</button></a>
                                         </div>
                                     </div>
                                 </div>
@@ -213,6 +212,23 @@
 
     </main>
 
+    <section class="data-visualization">
+        <div class="dropdown">
+            <button class="dropbtn">Rate of new cancers/deaths</button>
+            <div class="dropdown-content">
+            <a href="#">Rate of New Cancers</a>
+            <a href="index2-1-2.html">Rate of New Deaths</a>
+            </div>
+        </div>
+        <!-- <img src="img/rate_cancer.jpg" class="barchart" alt="image of rate of new cancers"> -->
+        <!--new added pie chart -->
+        <div id="newCancerPie"> </div>
+        <div id="deathPie"> </div>
+        <div id="alcohol"> </div>
+        <div id="tobacco"> </div>
+        <!--    ------------------------------              -->
+    </section>
+
 
     <footer>
         <div class="footer-top">
@@ -239,6 +255,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <!-- Load plotly.js into the DOM -->
+    <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
 
 
     <script src="https://d3js.org/d3-dsv.v2.min.js"></script>
