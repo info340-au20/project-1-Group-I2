@@ -9,7 +9,7 @@ function search(e) {
 		document.getElementById("text").innerHTML = newText;
   }
 }
-
+/*
 let demo = [
 	{"race":"white", "new_cancer_rate":438.8, "death_rate":153.6},
 	{"race":"black", "new_cancer_rate":429.1, "death_rate":173.7},
@@ -43,9 +43,7 @@ let tobacco = [
 	{"cancer_type":"Acute Myeloid Leukemia", "tobacco-associated":4.1},
 	{"cancer_type":"Larynx", "tobacco-associated":3.0}
 ];
-console.log(demo, tobacco, alcohol);
-
-
+*/
 
  // when clicking the button of know more about risk factor, show some statistics
 let buttonRisk = document.querySelector('#riskbutton');
@@ -108,7 +106,3 @@ function renderError(error) {
 	alert.classList.add("alert");
 	alert.classList.add('alert-danger');
 }
-
-
-
-
