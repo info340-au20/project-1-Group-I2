@@ -107,7 +107,7 @@ function renderError(error) {
 	alert.textContent = error.message;
 	alert.classList.add("alert");
 	alert.classList.add('alert-danger');
-  }
+}
 
 
 
