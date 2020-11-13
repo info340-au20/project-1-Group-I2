@@ -325,20 +325,17 @@ h3 {
 }
 
 /* to adjust the video */
-.videoWrapper {
+.video {
   position: relative;
-  padding-bottom: 56.25%;
+  padding-bottom: 60%;
   height: 0;
   vertical-align: middle;
 }
-.videoWrapper iframe {
+.video img {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  width: 65%;
   height: 100%;
 }
-
 .visualization{
   margin: 3rem;
   background-color: wheat;
