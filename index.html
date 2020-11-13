@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Draft: Cancer Awareness</title>
+    <title>Cancer Awareness</title>
     <meta name="author" content="Yufei Xia(Lexi), Skye Tian, Sinan Zhao">
     <meta name="description" content="This page presents the draft for Group 12's project： Cancer Awareness">
 
@@ -66,16 +66,7 @@
         </div>
 
     </nav>
-<!-- 
 
-        <div class="dropdown" id="Hamburger-menu">
-            <button class="dropbtn"><img id="menu" src="img/menu.png" alt="hamburger menu icon"></button>
-            <div class="dropdown-content">
-            <a href="#">Main Page</a>
-            <a href="index2-1-2.html">About</a>
-            </div>
-        </div> 
-     -->
 
       
     <header class="about-header1">
@@ -92,7 +83,7 @@
         </div>
     </header>    
 
-    <main>
+    <main class='main_page'>
         <div class="row">
             <div class="col-md col-lg">
                 <h2 class="header2">What we know about risk factors</h2>
@@ -167,73 +158,78 @@
                                             <h2 class="card-title">Demographics</h2>
                                             <p class="card-text">See the demographics of people with cancers</p>
                                             <!--<a href="index2-1.html" class="btn btn-dark">Learn more</button></a> -->
-                                            <a href="" id = "demobutton" class="btn btn-dark">Learn more</button></a>
+                                            <a href="" id = "demobutton" class="btn btn-dark">Show</button></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                        <!-- Card 2 -->
-                    <div class="col  d-flex">
-                        <div class="card mb-4">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-sm-auto">
-                                        <img class=" pb-3" src="img/factor.png" alt="image of risk factors for cancers">
-                                    </div>
-                                    <div class="col-sm">
-                                        <h2 class="card-title">Risk factors</h2>
-                                        <p class="card-text">See what risk factors can lead to cancers</p>
-                                        <a href="" id = "riskbutton" class="btn btn-dark">Learn more</button></a>
+                    <!--card2 fixed-->
+                    <div class="row">
+                        <div class="col  d-flex">
+                            <div class="card mb-4"> 
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-auto">                                   
+                                            <img class="pb-3" src="img/factor.png" alt="image of risk factors for cancers">
+                                        </div>
+                                        <div class="col-sm">
+                                            <h2 class="card-title">Risk factors</h2>
+                                            <p class="card-text">See what risk factors can lead to cancers</p>
+                                            <a href="" id = "riskbutton" class="btn btn-dark">Show</button></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>       
+                    </div>     
                 </div>   
             </div>  
         </div>   
         <div class="information">
         </div>
 
-        <div class="data_visualization" style="display: none">
-            <h3>Learn more about risk-associated cancers</h3>
-            <div class="dropdown">
-                <button class="dropbtn">Risk factors</button>
-                <div class="dropdown-content">
-                <a href="#">Alchohol-associated cancer</a>
-                <a href="#">Tobacco-associated cancers</a>
-                </div>
+        <!--test by Lexi-->
+        <div class="data_visualization2" style="display: none">
+            <div>
+                <h4>Select to See Demographic</h4>
             </div>
-            <img src="img/risk_alchohol.jpg" class="barchart" alt="bar chart of alcohol-associated cancer ">
+            <form method="post">
+                <select id="demo">
+                    <option value=""> Please Select </option>
+                    <option value="1">Rate of New Deatn</option>
+                    <option value="2">Rate of Cancer</option>
+                </select>
+                <button type="button" class = 'filter_button' onclick="return clickFunction2()">confirm</button>
+        </form>
+        <div id="here" class='visualization'> </div>
+
+        <!--test by Lexi-->
+        <div class="data_visualization1" style="display: none">
+            <div>
+                <h4>Select to See Risk Factor Association</h4>
+            </div>
+            <form method="post">
+                <select id="risk_factor">
+                    <option value=""> Please Select </option>
+                    <option value="1">Alchohol-associated cancer</option>
+                    <option value="2">Tobacco-associated cancers</option>
+                </select>
+                <button type="button" class = 'filter_button' onclick="return clickFunction1()">confirm</button>
+            </form>
+            <div id="here" class='visualization'> </div>
         </div>
-
-
+        
+    </div>
     </main>
-
-    <section class="data-visualization">
-        <div class="dropdown">
-            <button class="dropbtn">Rate of new cancers/deaths</button>
-            <div class="dropdown-content">
-            <a href="#">Rate of New Cancers</a>
-            <a href="index2-1-2.html">Rate of New Deaths</a>
-            </div>
-        </div>
-        <!-- <img src="img/rate_cancer.jpg" class="barchart" alt="image of rate of new cancers"> -->
-        <!--new added pie chart -->
-        <div id="newCancerPie"> </div>
-        <div id="deathPie"> </div>
-        <div id="alcohol"> </div>
-        <div id="tobacco"> </div>
-        <!--    ------------------------------              -->
-    </section>
 
 
     <footer>
         <div class="footer-top">
             <a href="https://www.thecurealliance.org/why-we-care/">Pictures</a>|
             <a href="https://gis.cdc.gov/Cancer/USCS/DataViz.html">Data</a>|
+            <a href="https://youtu.be/OjkzfeJz66o">YouTube</a>|
             <a href="https://github.com/info340-au20/project-1-Group-I2.git">Github Page</a>
             <p>Data from <a href="https://gis.cdc.gov/Cancer/USCS/DataViz.html">CDC</a></p>
         </div>
@@ -242,7 +238,6 @@
                 &copy;Copyright Info340 group-I2 | University of Washington
             </p>
         </div>
-
     </footer>
 
     <!-- jQuery first, then Bootstrap JS -->
@@ -258,23 +253,13 @@
     <!-- Load plotly.js into the DOM -->
     <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.4 /fetch.min.js"></script>
+    <!-- sha512-1yUGYJwZZKg/5M1i8F42RGeToSJho7ZOS4LsAYW8dmpclkJLcGL/dLCadS3pGoMpt8V70Y3YPwY8V0VMtlL0tg== -->
+    <!-- https://cdnjs.cloudflare.com/ajax/libs/es6-promise/2.2.0/es6-promise.min.js -->
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.js"></script>
     <script src="https://d3js.org/d3-dsv.v2.min.js"></script>
     <script src="https://d3js.org/d3-fetch.v2.min.js"></script>
     <!-- Our scripts -->
     <script src="./js/index.js"></script>
-
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.4 /fetch.min.js"></script>
-  <!-- sha512-1yUGYJwZZKg/5M1i8F42RGeToSJho7ZOS4LsAYW8dmpclkJLcGL/dLCadS3pGoMpt8V70Y3YPwY8V0VMtlL0tg== -->
-  <!-- https://cdnjs.cloudflare.com/ajax/libs/es6-promise/2.2.0/es6-promise.min.js -->
-
-  <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.js"></script>
-
-
-
 </body>
 </html>
-
-

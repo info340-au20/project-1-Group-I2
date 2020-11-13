@@ -9,7 +9,7 @@ function search(e) {
 		document.getElementById("text").innerHTML = newText;
   }
 }
-
+/*
 let demo = [
 	{"race":"white", "new_cancer_rate":438.8, "death_rate":153.6},
 	{"race":"black", "new_cancer_rate":429.1, "death_rate":173.7},
@@ -43,24 +43,29 @@ let tobacco = [
 	{"cancer_type":"Acute Myeloid Leukemia", "tobacco-associated":4.1},
 	{"cancer_type":"Larynx", "tobacco-associated":3.0}
 ];
-console.log(demo, tobacco, alcohol);
+*/
 
+// when clicking the button of know more about demographic, show some statistics
+let buttonDemo = document.querySelector('#demobutton');
+buttonDemo.addEventListener('click', function(event) {
+	document.querySelector('.information').textContent = '';
 
+	document.querySelector('.data_visualization1').style.display = "none";
+	document.querySelector('.data_visualization2').style.display = "block";
+
+	event.preventDefault();
+});
 
  // when clicking the button of know more about risk factor, show some statistics
 let buttonRisk = document.querySelector('#riskbutton');
 buttonRisk.addEventListener('click', function(event) {
 	document.querySelector('.information').textContent = '';
-
+	document.querySelector('.data_visualization1').style.display = "block";
 	for (let j = 0; j < 4; j ++) {
 		renderInformation(j);
 	}
-
-	document.querySelector('.data_visualization').style.display = "block";
-
 	event.preventDefault();
 });
-
 
 function renderInformation(i) {
 	let paragraph = document.createElement('p');
@@ -108,8 +113,38 @@ function renderError(error) {
 	alert.textContent = error.message;
 	alert.classList.add("alert");
 	alert.classList.add('alert-danger');
-  }
+}
 
+/* function for filter */
+function clickFunction1(){
+	var type = document.getElementById ("risk_factor");
 
+	if (type.value == ""){
+		alert ("please select an option");
+		return false;
+	}
 
+	if (type.value == "1"){
+		document.getElementById("here").innerHTML='<img src="img/risk_alchohol.jpg" width = 100% height = 100%>';
+	} else {
+		document.getElementById("here").innerHTML='<img src="img/risk_tobacco.jpg" width = 100% height = 100%>';
+	}
 
+}
+
+/* function for filter */
+function clickFunction2(){
+	var type = document.getElementById ("demo");
+
+	if (type.value == ""){
+		alert ("please select an option");
+		return false;
+	}
+
+	if (type.value == "1"){
+		document.getElementById("here").innerHTML='<img src="img/rateofnewdeath.jpg" width = 100% height = 100%>';
+	} else  {
+		document.getElementById("here").innerHTML='<img src="img/rate_cancer.jpg" width = 100% height = 100%>';
+	}
+
+}
