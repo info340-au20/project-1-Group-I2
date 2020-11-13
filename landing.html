@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Draft: Cancer Awareness</title>
+  <title>Cancer Awareness</title>
     <meta charset="utf-8">
   <meta name="author" content="Yufei Xia(Lexi), Skye Tian, Sinan Zhao">
   <meta name="description" content="This page presents the draft for Group 12's project： Cancer Awareness">
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="CSS/style.css">
-  <link rel="stylesheet" 
-  href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" 
-  integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" 
-  crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -39,30 +39,26 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
         <a class="navbar-brand" href="#">
-            <!-- <img src="img/favicon.png" width="30" height="30" class="d-inline-block align-top" alt="icon of the website"> -->
+            <img src="img/favicon.png" width="30" height="30" class="d-inline-block align-top" alt="icon of the website">
             Cancer Awareness
-          </a>
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
-  
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-            <a class="nav-link" href="index.html">Main Page<span class="sr-only">(current)</span></a>
-            </li>   
-            <li class="nav-item">
-                <a class="nav-link" href="landing.html">About</a>
-            </li>         
-        </ul>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="landing.html">About<span class="sr-only">(current)</span></a>
+                </li>   
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Main Page</a>
+                </li>         
+            </ul>
         </div>
-        <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+        
+
     </nav>
-
-
 
     <header class="about-header1">
         <div class="container">
@@ -74,13 +70,29 @@
     <header class="quote jumbotron jumbotron-fluid bg-dark">
         <div class="container">
           <h1>Cancer is possibly our normalcy, our final destiny...</h1>
-          <p class="lead">Siddhartha Mukherjee -- <span>The Emperor of all Maladies</span></p>
+          <p class="lead">Why we care? -- <span>Healthier lifestyle, happier life</span></p>
         </div>
     </header>
 
     <main>
         <div class="intro">
-            <div class="titel container">
+            <!--To add a link to a YouTube video-->
+            <div class='title_container'>
+                <h2>To learn more about cancer by clicking the picture below</h2>
+            </div>
+            <div class="video">
+                <a href="https://youtu.be/pt_chxEi42Y">
+                    <img src="img/ytb_screenshot.jpg" alt="A video from CDC about cancer"
+                    width="200" height="80">
+                </a>
+            </div>
+            <div class="paragraph">
+                <p>
+                    * This video is from CDC offical channel on YouTube. Copyright CDC.
+                </p>
+            </div>
+
+            <div class="title_container">
                 <h2>The deadest disease</h2>
             </div>
             <div class="paragraph">
@@ -96,9 +108,10 @@
                     All these cases in my family keep ringing the 
                     bell for me to be aware of cancer.
                 </p>  
+
             </div>
 
-            <div class="title container">
+            <div class="title_container">
                 <h2>Our Mission</h2>
             </div>
             <div class="paragraph">
@@ -123,32 +136,28 @@
                 </p> 
             </div>
         </div>
-
-        <section class="image">
+        <div class="image">
             <div class="title2">
                 <h1>Do you Know?</h2>
             </div>
             <img src="img/stat-pic.jpg"F alt="cancer statistic picture" class="responsive">
-        </section>
-        <footer>
-            <div class="footer-top">
-                <a href="https://www.thecurealliance.org/why-we-care/">Pictures</a>|
-                <a href="https://gis.cdc.gov/Cancer/USCS/DataViz.html">Data</a>|
-                <a href="https://github.com/info340-au20/project-1-Group-I2.git">Github Page</a>
-            </div>
-            <div>
-                <p class="copyright">
-                    &copy;Copyright Info340 group-I2 | University of Wahington
-                </p>
-            </div>
-<<<<<<< HEAD
         </div>
-        </footer>
+        
     </main>
-</body>
-=======
-        </footer>
-    </main>
+    
+    <footer>
+        <div class="footer-top">
+            <a href="https://www.thecurealliance.org/why-we-care/">Pictures</a>|
+            <a href="https://gis.cdc.gov/Cancer/USCS/DataViz.html">Data</a>|
+            <a href="https://youtu.be/pt_chxEi42Y">YouTube</a>|
+            <a href="https://github.com/info340-au20/project-1-Group-I2.git">Github Page</a>
+            <p>Vedio from <a href="https://youtu.be/pt_chxEi42Y">YouTube, CDC offical channel</a></p>
+        </div>
+        <div>
+            <p class="copyright">
+                &copy;Copyright Info340 group-I2 | University of Washington
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
->>>>>>> 2ea7e4913b4d1137c4b9c2c8509c98d03bf5cf33

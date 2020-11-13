@@ -1,0 +1,5 @@
+Risk,Cancer,numOfType,cancer1,cancer2,cancer3,rateOfDeath1,rateOfDeath2,CancerDeath1,CancerDeath2,death
+alchohol,3500,8,mouth,larynx,oesophagus,3.20%,3.70%,18 200, 21 300,
+HPV,"34,000",6,cervical ,oropharynx  ,vulvar ,,,,,
+obsesity,"85,000",13,breast,liver,kidney,,,,, 2.8 million
+tobacco,"667,000",8,mouth ,throat,liver,,40%,,,

@@ -2,13 +2,15 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-main {
-  margin-left: 10px;
+/* main page indent */
+.main_page {
+  margin-left: 10%;
+  margin-right: 8%;
 }
- 
+
+
 
 /* 
-
 #Hamburger-menu {
   position: fixed;
   margin-top: 0;
@@ -39,14 +41,24 @@ main {
 
  .dropdown {
     margin-top: 1em;
-    margin-left: 5%;
+    margin-left: 15.5%;
     position: fixed;
     display: block;
-    margin-bottom: 10px;
     padding-bottom: .5%;
   }
 
-
+  .information {
+    padding-top:5%;
+    padding-bottom:5%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    color: #778899;
+  }
+  
 
 
   
@@ -94,10 +106,10 @@ main {
   }
 
 .barchart{
+    margin: auto;
     display: block;
     margin-left: 5%;
     margin-right: auto;
-    width: 70%;
     padding-bottom: 2%;
   }
 
@@ -109,8 +121,14 @@ main {
     padding-bottom: 2%;
   }
 
-div.titel{
-  margin-left: 2rem;
+  .data_visualization1, .data_visualization2 {
+    margin-bottom: 10%;
+  }
+
+
+
+div.title{
+  margin-left: 0;
 }
 
 .quote{
@@ -126,11 +144,16 @@ footer p {
 }
 
 .intro{
+  padding: 2rem;
   background-size: 1400px 800px;
   background-image:url('../img/map.jpg');
   opacity: 60%;
   color: black;
 }
+
+
+.dropdown
+
 
 header div p span{
   font-style: italic;
@@ -152,7 +175,7 @@ header div p span{
 }
 
 .footer-top{
-  margin-left: 5rem;
+  margin-left: 2rem;
   color: orange;
 }
 
@@ -160,6 +183,7 @@ header div p span{
 footer{
   height: auto;
   background-color: rgba(30, 49, 110, 0.932);
+  padding: 0%;
 }
 
 
@@ -192,8 +216,12 @@ footer{
 }
 
 
-
-
+/* Style for highlight button */
+#highlight {
+  padding: 2px;
+  border-radius: 6px;
+  border-color: wheat;
+}
 
 /* Style the hamburger menu */
 .topnav a.icon {
@@ -219,6 +247,7 @@ footer{
 }
 
 
+
 .section1 {
     background-color: whitesmoke;
     padding: 20px;
@@ -234,6 +263,10 @@ footer{
     background-color: darkgrey;
 }
 
+
+h3 {
+  text-align: center;
+}
 @media (max-width: 598px) {
   .card-body {
     background-color:antiquewhite;
@@ -288,4 +321,21 @@ footer{
   .card-body {
     background-color:none;
   }
+}
+
+/* to adjust the video */
+.video {
+  position: relative;
+  padding-bottom: 60%;
+  height: 0;
+  vertical-align: middle;
+}
+.video img {
+  position: absolute;
+  width: 65%;
+  height: 100%;
+}
+.visualization{
+  margin: 3rem;
+  background-color: wheat;
 }
