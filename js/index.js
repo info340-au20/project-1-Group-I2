@@ -50,6 +50,7 @@ let buttonDemo = document.querySelector('#demobutton');
 buttonDemo.addEventListener('click', function(event) {
 	document.querySelector('.information').textContent = '';
 
+	document.querySelector('.data_visualization1').style.display = "none";
 	document.querySelector('.data_visualization2').style.display = "block";
 
 	event.preventDefault();
