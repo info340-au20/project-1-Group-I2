@@ -60,7 +60,7 @@
         <!--Highlight search bar-->
         <div>
             <input type="text" id="search"/>
-            <button onClick="search(id)" id="highlight">
+            <button onClick="" id="highlight">
                 Highlight
             </button>
         </div>
@@ -191,22 +191,21 @@
         </div>
 
         <!--test by Lexi-->
-        <div class="data_visualization2" style="display: none">
+        <div class="demo_visualization" style="display: none">
             <div>
                 <h4>Select to See Demographic</h4>
             </div>
             <form method="post">
                 <select id="demo">
-                    <option value=""> Please Select </option>
-                    <option value="1">Rate of New Deatn</option>
+                    <option value="1">Rate of New Death</option>
                     <option value="2">Rate of Cancer</option>
                 </select>
-                <button type="button" class = 'filter_button' onclick="return clickFunction2()">confirm</button>
+                <button type="button" class = 'filter_demo' onclick=''>confirm</button>
         </form>
         <div id="here" class='visualization'> </div>
 
         <!--test by Lexi-->
-        <div class="data_visualization1" style="display: none">
+        <div class="risk_visualization" style="display: none">
             <div>
                 <h4>Select to See Risk Factor Association</h4>
             </div>
@@ -216,7 +215,7 @@
                     <option value="1">Alchohol-associated cancer</option>
                     <option value="2">Tobacco-associated cancers</option>
                 </select>
-                <button type="button" class = 'filter_button' onclick="return clickFunction1()">confirm</button>
+                <button type="button" class = 'filter_risk' onclick="">confirm</button>
             </form>
             <div id="here" class='visualization'> </div>
         </div>

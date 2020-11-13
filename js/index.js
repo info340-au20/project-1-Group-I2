@@ -1,13 +1,16 @@
 'use strict';
 
-function search(e) {
+function search() {
 	let searched = document.getElementById("search").value.trim();
-  	if (searched !== "") {
-  		let text = document.getElementById("text").innerHTML;
+	if(searched !== "") {
+  	    let text = document.getElementById("text").innerHTML;
   		let re = new RegExp(searched,"g"); // search for all instances
 		let newText = text.replace(re, `<mark>${searched}</mark>`);
 		document.getElementById("text").innerHTML = newText;
-  }
+    }
+}
+document.querySelector('#highlight').onclick = function() {
+	search();
 }
 /*
 let demo = [
@@ -50,21 +53,25 @@ let buttonDemo = document.querySelector('#demobutton');
 buttonDemo.addEventListener('click', function(event) {
 	document.querySelector('.information').textContent = '';
 
-	document.querySelector('.data_visualization1').style.display = "none";
-	document.querySelector('.data_visualization2').style.display = "block";
-
+	document.querySelector('.demo_visualization').style.display = "block";
 	event.preventDefault();
+	document.querySelector('.filter_demo').onclick = function() {
+		clickDemo();
+	}
 });
 
  // when clicking the button of know more about risk factor, show some statistics
 let buttonRisk = document.querySelector('#riskbutton');
 buttonRisk.addEventListener('click', function(event) {
 	document.querySelector('.information').textContent = '';
-	document.querySelector('.data_visualization1').style.display = "block";
+	document.querySelector('.risk_visualization').style.display = "block";
 	for (let j = 0; j < 4; j ++) {
 		renderInformation(j);
 	}
 	event.preventDefault();
+	document.querySelector('.filter_risk').onclick = function() {
+		clickRisk();
+	}
 });
 
 function renderInformation(i) {
@@ -114,25 +121,7 @@ function renderError(error) {
 	alert.classList.add('alert-danger');
 }
 
-/* function for filter */
-function clickFunction1(){
-	var type = document.getElementById ("risk_factor");
-
-	if (type.value == ""){
-		alert ("please select an option");
-		return false;
-	}
-
-	if (type.value == "1"){
-		document.getElementById("here").innerHTML='<img src="img/risk_alchohol.jpg" width = 100% height = 100%>';
-	} else {
-		document.getElementById("here").innerHTML='<img src="img/risk_tobacco.jpg" width = 100% height = 100%>';
-	}
-
-}
-
-/* function for filter */
-function clickFunction2(){
+function clickDemo(){
 	var type = document.getElementById ("demo");
 
 	if (type.value == ""){
@@ -144,6 +133,17 @@ function clickFunction2(){
 		document.getElementById("here").innerHTML='<img src="img/rateofnewdeath.jpg" width = 100% height = 100%>';
 	} else  {
 		document.getElementById("here").innerHTML='<img src="img/rate_cancer.jpg" width = 100% height = 100%>';
+	}
+
+}
+/* function for filter */
+function clickRisk(){
+	var type = document.getElementById ("risk_factor");
+	if (type.value == "1"){
+		document.getElementById("here").innerHTML='<img src="img/risk_alchohol.jpg" width = 100% height = 100%>';
+	} 
+	if (type.value == "2") {
+		document.getElementById("here").innerHTML='<img src="img/risk_tobacco.jpg" width = 100% height = 100%>';
 	}
 
 }
