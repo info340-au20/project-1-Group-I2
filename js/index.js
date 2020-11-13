@@ -66,14 +66,15 @@ function renderInformation(i) {
 	let paragraph = document.createElement('p');
 	document.querySelector('.information').append(paragraph);
 	d3.csv("/data/fetchData.csv").then(function(data) {
+		console.log(data[0].Risk);
 		// let stats = JSON.stringify(data[0]);
 		paragraph.textContent = renderStats(
-			JSON.stringify(data[i].Risk), 
-			JSON.stringify(data[i].Cancer), 
-			JSON.stringify(data[i].numOfType),
-			JSON.stringify(data[i].cancer1),
-			JSON.stringify(data[i].cancer2),
-			JSON.stringify(data[i].cancer3))[0];
+			data[i].Risk, 
+			data[i].Cancer, 
+			data[i].numOfType,
+			data[i].cancer1,
+			data[i].cancer2,
+			data[i].cancer3)[0];
 			
 	})
 	.catch(renderError);
@@ -82,12 +83,12 @@ function renderInformation(i) {
 	document.querySelector('.information').append(paragraph2);
 	d3.csv("/data/fetchData.csv").then(function(data) {
 		paragraph2.textContent = renderStats(
-			JSON.stringify(data[i].Risk), 
-			JSON.stringify(data[i].Cancer), 
-			JSON.stringify(data[i].numOfType),
-			JSON.stringify(data[i].cancer1),
-			JSON.stringify(data[i].cancer2),
-			JSON.stringify(data[i].cancer3))[1];	
+			data[i].Risk, 
+			data[i].Cancer, 
+			data[i].numOfType,
+			data[i].cancer1,
+			data[i].cancer2,
+			data[i].cancer3)[1];	
 	})
 	.catch(renderError);
 }
