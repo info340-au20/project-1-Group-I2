@@ -51,9 +51,8 @@ let tobacco = [
 // when clicking the button of know more about demographic, show some statistics
 let buttonDemo = document.querySelector('#demobutton');
 buttonDemo.addEventListener('click', function(event) {
-	document.querySelector('.information').textContent = '';
-
-	document.querySelector('.demo_visualization').style.display = "block";
+	document.querySelector('.data_visualization1').style.display = "none";
+	document.querySelector('.data_visualization2').style.display = "block";
 	event.preventDefault();
 	document.querySelector('.filter_demo').onclick = function() {
 		clickDemo();
@@ -64,7 +63,8 @@ buttonDemo.addEventListener('click', function(event) {
 let buttonRisk = document.querySelector('#riskbutton');
 buttonRisk.addEventListener('click', function(event) {
 	document.querySelector('.information').textContent = '';
-	document.querySelector('.risk_visualization').style.display = "block";
+	document.querySelector('.data_visualization2').style.display = "none";
+	document.querySelector('.data_visualization1').style.display = "block";
 	for (let j = 0; j < 4; j ++) {
 		renderInformation(j);
 	}
@@ -78,14 +78,15 @@ function renderInformation(i) {
 	let paragraph = document.createElement('p');
 	document.querySelector('.information').append(paragraph);
 	d3.csv("/data/fetchData.csv").then(function(data) {
+		console.log(data[0].Risk);
 		// let stats = JSON.stringify(data[0]);
 		paragraph.textContent = renderStats(
-			JSON.stringify(data[i].Risk), 
-			JSON.stringify(data[i].Cancer), 
-			JSON.stringify(data[i].numOfType),
-			JSON.stringify(data[i].cancer1),
-			JSON.stringify(data[i].cancer2),
-			JSON.stringify(data[i].cancer3))[0];
+			data[i].Risk, 
+			data[i].Cancer, 
+			data[i].numOfType,
+			data[i].cancer1,
+			data[i].cancer2,
+			data[i].cancer3)[0];
 			
 	})
 	.catch(renderError);
@@ -94,12 +95,12 @@ function renderInformation(i) {
 	document.querySelector('.information').append(paragraph2);
 	d3.csv("/data/fetchData.csv").then(function(data) {
 		paragraph2.textContent = renderStats(
-			JSON.stringify(data[i].Risk), 
-			JSON.stringify(data[i].Cancer), 
-			JSON.stringify(data[i].numOfType),
-			JSON.stringify(data[i].cancer1),
-			JSON.stringify(data[i].cancer2),
-			JSON.stringify(data[i].cancer3))[1];	
+			data[i].Risk, 
+			data[i].Cancer, 
+			data[i].numOfType,
+			data[i].cancer1,
+			data[i].cancer2,
+			data[i].cancer3)[1];	
 	})
 	.catch(renderError);
 }
@@ -121,6 +122,24 @@ function renderError(error) {
 	alert.classList.add('alert-danger');
 }
 
+/* function for filter */
+function clickRisk(){
+	var type = document.getElementById ("risk_factor");
+
+	if (type.value == ""){
+		alert ("please select an option");
+		return false;
+	}
+
+	if (type.value == "1"){
+		document.getElementById("here1").innerHTML='<img src="img/risk_alchohol.jpg" width = 100% height = 100%>';
+	} else {
+		document.getElementById("here1").innerHTML='<img src="img/risk_tobacco.jpg" width = 100% height = 100%>';
+	}
+
+}
+
+/* function for filter */
 function clickDemo(){
 	var type = document.getElementById ("demo");
 
@@ -130,20 +149,8 @@ function clickDemo(){
 	}
 
 	if (type.value == "1"){
-		document.getElementById("here").innerHTML='<img src="img/rateofnewdeath.jpg" width = 100% height = 100%>';
+		document.getElementById("here2").innerHTML='<img src="img/rateofnewdeath.jpg" width = 100% height = 100%>';
 	} else  {
-		document.getElementById("here").innerHTML='<img src="img/rate_cancer.jpg" width = 100% height = 100%>';
+		document.getElementById("here2").innerHTML='<img src="img/rate_cancer.jpg" width = 100% height = 100%>';
 	}
-
-}
-/* function for filter */
-function clickRisk(){
-	var type = document.getElementById ("risk_factor");
-	if (type.value == "1"){
-		document.getElementById("here").innerHTML='<img src="img/risk_alchohol.jpg" width = 100% height = 100%>';
-	} 
-	if (type.value == "2") {
-		document.getElementById("here").innerHTML='<img src="img/risk_tobacco.jpg" width = 100% height = 100%>';
-	}
-
 }
