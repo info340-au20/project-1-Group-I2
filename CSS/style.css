@@ -8,10 +8,6 @@
   margin-right: 8%;
 }
 
-.intro{
-  padding: 2rem;
-  
-}
 
 
 /* 
@@ -111,6 +107,8 @@
   }
 
 .barchart{
+    margin: auto;
+    width: 70%;
     display: block;
     margin-left: 5%;
     margin-right: auto;
@@ -125,6 +123,12 @@
     width: 50%;
     padding-bottom: 2%;
   }
+
+  .data_visualization1, .data_visualization2 {
+    margin-bottom: 10%;
+  }
+
+
 
 div.title{
   margin-left: 0;
@@ -143,16 +147,14 @@ footer p {
 }
 
 .intro{
+  padding: 2rem;
   background-size: 1400px 800px;
   background-image:url('../img/map.jpg');
   opacity: 60%;
   color: black;
 }
 
-.barchart{
-  margin: auto;
-  width: 70%;
-}
+
 .dropdown
 
 

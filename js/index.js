@@ -48,11 +48,8 @@ let tobacco = [
 // when clicking the button of know more about demographic, show some statistics
 let buttonDemo = document.querySelector('#demobutton');
 buttonDemo.addEventListener('click', function(event) {
-	document.querySelector('.information').textContent = '';
-
 	document.querySelector('.data_visualization1').style.display = "none";
 	document.querySelector('.data_visualization2').style.display = "block";
-
 	event.preventDefault();
 });
 
@@ -60,6 +57,7 @@ buttonDemo.addEventListener('click', function(event) {
 let buttonRisk = document.querySelector('#riskbutton');
 buttonRisk.addEventListener('click', function(event) {
 	document.querySelector('.information').textContent = '';
+	document.querySelector('.data_visualization2').style.display = "none";
 	document.querySelector('.data_visualization1').style.display = "block";
 	for (let j = 0; j < 4; j ++) {
 		renderInformation(j);
@@ -125,9 +123,9 @@ function clickFunction1(){
 	}
 
 	if (type.value == "1"){
-		document.getElementById("here").innerHTML='<img src="img/risk_alchohol.jpg" width = 100% height = 100%>';
+		document.getElementById("here1").innerHTML='<img src="img/risk_alchohol.jpg" width = 100% height = 100%>';
 	} else {
-		document.getElementById("here").innerHTML='<img src="img/risk_tobacco.jpg" width = 100% height = 100%>';
+		document.getElementById("here1").innerHTML='<img src="img/risk_tobacco.jpg" width = 100% height = 100%>';
 	}
 
 }
@@ -142,9 +140,9 @@ function clickFunction2(){
 	}
 
 	if (type.value == "1"){
-		document.getElementById("here").innerHTML='<img src="img/rateofnewdeath.jpg" width = 100% height = 100%>';
+		document.getElementById("here2").innerHTML='<img src="img/rateofnewdeath.jpg" width = 100% height = 100%>';
 	} else  {
-		document.getElementById("here").innerHTML='<img src="img/rate_cancer.jpg" width = 100% height = 100%>';
+		document.getElementById("here2").innerHTML='<img src="img/rate_cancer.jpg" width = 100% height = 100%>';
 	}
 
 }
