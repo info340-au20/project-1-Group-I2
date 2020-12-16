@@ -8,8 +8,6 @@
   margin-right: 8%;
 }
 
-
-
 /* 
 #Hamburger-menu {
   position: fixed;
@@ -18,21 +16,18 @@
 }
  */
 
- .imageOfDemo {
+ /* #imageOfDemo {
     width: 100%;
-    height: 20vw;
-    object-fit: cover;
+    /* height: 20vw; */
+    /* object-fit: cover; */
 }
 
-.imageOfRisk {
+#imageOfRisk {
     width: 100%;
-    height: 20vw;
-    object-fit: cover;
+    /* height: 20vw; */
+    /* object-fit: cover; */
 
-}
-
-
-
+} */
 
 /* Hide the links inside the navigation menu (except for logo/home) */
 .topnav #myLinks {
@@ -267,47 +262,44 @@ footer{
 h3 {
   text-align: center;
 }
-@media (max-width: 598px) {
-  .card-body {
-    background-color:antiquewhite;
-  }
-  h2, p {
-    display: block;
-  }
-  section {
-    margin-left: 10%;
-  }
+
+.card-body {
+  background-color:antiquewhite;
 }
+h2, p {
+  display: block;
+}
+section {
+  margin-left: 10%;
+}
+
 
 
 @media (min-width: 598px) {
   .Hamburger-menu {
     display: none;
   }
-  .card-body {
-    background-color:antiquewhite;
-  }
 }
 
-@media (min-width: 768px) and (max-width: 992px){
+@media (min-width: 768px){
   .Hamburger-menu {
     display: none;
   }
 
-    html {
-        height: 100%;
-    }
+  html {
+      height: 100%;
+  }
 
-    h1 {
-      font-size: 5rem;
-    }
+  h1 {
+    font-size: 5rem;
+  }
 
-    h2 {
-      font-size: 3rem;
-    }
-    .card-body {
-      background-color:none;
-    }
+  h2 {
+    font-size: 3rem;
+  }
+  .card-body {
+    background-color:none;
+  }
 }
 
 @media (min-width: 992px) {

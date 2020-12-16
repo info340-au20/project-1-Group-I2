@@ -75,7 +75,7 @@ buttonRisk.addEventListener('click', function(event) {
 function renderInformation(i) {
 	let paragraph = document.createElement('p');
 	document.querySelector('.information').append(paragraph);
-	d3.csv("/data/fetchData.csv").then(function(data) {
+	d3.csv("./data/fetchData.csv").then(function(data) {
 		console.log(data[0].Risk);
 		// let stats = JSON.stringify(data[0]);
 		paragraph.textContent = renderStats(
@@ -91,7 +91,7 @@ function renderInformation(i) {
 
 	let paragraph2 = document.createElement('p');
 	document.querySelector('.information').append(paragraph2);
-	d3.csv("/data/fetchData.csv").then(function(data) {
+	d3.csv("./data/fetchData.csv").then(function(data) {
 		paragraph2.textContent = renderStats(
 			data[i].Risk, 
 			data[i].Cancer, 
