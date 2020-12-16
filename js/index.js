@@ -104,7 +104,6 @@ function clickRisk(){
 	}
 
 }
-
 /* function for filter */
 function clickDemo(){
 	var type = document.getElementById ("demo");
