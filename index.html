@@ -5,6 +5,7 @@
     <title>Cancer Awareness</title>
     <meta name="author" content="Yufei Xia(Lexi), Skye Tian, Sinan Zhao">
     <meta name="description" content="This page presents the draft for Group 12's project： Cancer Awareness">
+    <meta content="utf-8" http-equiv="encoding">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="CSS/style.css">
@@ -36,12 +37,9 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
-        <a class="navbar-brand" href="#">
-            <img src="img/favicon.png" width="30" height="30" class="d-inline-block align-top" alt="icon of the website">
-            Cancer Awareness
-        </a>
+        <a class="navbar-brand" href="#"><img src="img/favicon.png" class="favicon d-inline-block align-top" alt="icon of the website">Cancer Awareness</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -57,7 +55,7 @@
 
         <!--Highlight search bar-->
         <div>
-            <input type="text" id="search"/>
+            <input type="text" id="search" ariel-label="a search bar">
             <button onClick="" id="highlight">
                 Highlight
             </button>
@@ -79,8 +77,7 @@
             <p class="lead">Caring yourself -- <span>Preventing cancer by knowing more about it.</span></p>
         </div>
     </header>    
-
-    <main class='main_page'>
+    <main class="main_page">
         <div class="row">
             <div class="col-md col-lg">
                 <h2 class="header2">What we know about risk factors</h2>
@@ -144,26 +141,26 @@
                 <div class="container">
                     <!-- Card 1 -->
                     <div class="row">
-                        <div class="col  d-flex">
-                            <div class="card" style="width: 18rem;">
+                        <div class="col d-flex">
+                            <div class="card">
                                 <img class="card-img-top" src="img/population_metrics.jpg" alt="image of the demographic chart">
                                 <div class="card-body">
                                   <h5 class="card-title">Demographics</h5>
                                   <p class="card-text">See the demographics of people with cancers</p>
-                                  <a href="#" class="btn btn-primary" id = "demobutton">Show</a>
+                                  <a href="#" class="btn btn-primary" id="demobutton">Show</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!--card2 fixed-->
                     <div class="row">
-                        <div class="col  d-flex">
-                            <div class="card" style="width: 18rem;">
+                        <div class="col d-flex">
+                            <div class="card">
                                 <img class="card-img-top" src="img/factor.png" alt="image of risk factors for cancers">
                                 <div class="card-body">
                                   <h5 class="card-title">Risk factors</h5>
                                   <p class="card-text">See what risk factors can lead to cancers</p>
-                                  <a href="#" class="btn btn-primary" id = "riskbutton">Show</a>
+                                  <a href="#" class="btn btn-primary" id="riskbutton">Show</a>
                                 </div>
                             </div>
                         </div>
@@ -174,34 +171,34 @@
         <div class="information">
         </div>
 
-        <div class="data_visualization2" style="display: none">
+        <div class="data_visualization2">
             <div>
                 <h4>Select to See Demographic</h4>
             </div>
             <form method="post">
-                <select id="demo">
+                <select id="demo" aria-label="a filter to select multiple options">
                     <option value=""> Please Select </option>
                     <option value="1">Rate of New Death</option>
                     <option value="2">Rate of Cancer</option>
                 </select>
-                <button type="button" class = 'filter_demo' onclick=''>confirm</button>
+                <button type="button" class="filter_demo" onclick="">confirm</button>
             </form>
-            <div id="here2" class='visualization2'> </div>
+            <div id="here2" class="visualization2"> </div>
         </div>
 
-        <div class="data_visualization1" style="display: none">
+        <div class="data_visualization1">
             <div>
                 <h4>Select to See Risk Factor Association</h4>
             </div>
             <form method="post">
-                <select id="risk_factor">
+                <select id="risk_factor" aria-label="a filter to select multiple options">
                     <option value=""> Please Select </option>
                     <option value="1">Alchohol-associated cancer</option>
                     <option value="2">Tobacco-associated cancers</option>
                 </select>
-                <button type="button" class = 'filter_risk' onclick=''>confirm</button>
+                <button type="button" class="filter_risk" onclick="">confirm</button>
             </form>
-            <div id="here1" class='visualization1'> </div>
+            <div id="here1" class="visualization1"> </div>
         </div>
 
     </main>
@@ -222,6 +219,11 @@
         </div>
     </footer>
 
+    
+    
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+
     <!-- jQuery first, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -239,8 +241,11 @@
     <!-- sha512-1yUGYJwZZKg/5M1i8F42RGeToSJho7ZOS4LsAYW8dmpclkJLcGL/dLCadS3pGoMpt8V70Y3YPwY8V0VMtlL0tg== -->
     <!-- https://cdnjs.cloudflare.com/ajax/libs/es6-promise/2.2.0/es6-promise.min.js -->
     <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.js"></script>
+
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
     <script src="https://d3js.org/d3-dsv.v2.min.js"></script>
     <script src="https://d3js.org/d3-fetch.v2.min.js"></script>
+
     <!-- Our scripts -->
     <script src="./js/index.js"></script>
 </body>

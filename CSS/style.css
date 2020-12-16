@@ -119,12 +119,6 @@ div.title{
   text-align: center;
 }
 
-footer p {
-  color: white;
-}
-.quote p{
-  color: whitesmoke;
-}
 
 .intro{
   padding: 2rem;
@@ -261,8 +255,22 @@ section {
   margin-left: 10%;
 }
 
+.favicon {
+  width:30px;
+  height:30px;
+}
 
+.card {
+  width: 18rem;
+}
 
+.data_visualization2{
+  display:none;
+}
+
+.data_visualization1{
+  display: none;
+}
 @media (min-width: 598px) {
   .Hamburger-menu {
     display: none;
@@ -301,6 +309,13 @@ section {
   .card-body {
     background-color:none;
   }
+}
+
+footer p {
+  color: white;
+}
+.quote p{
+  color: whitesmoke;
 }
 
 /* to adjust the video */
