@@ -98,9 +98,9 @@ function clickRisk(){
 	}
 
 	if (type.value == "1"){
-		document.getElementById("here1").innerHTML='<img src="img/risk_alchohol.jpg">';
+		document.getElementById("here1").innerHTML='<img class="image" src="img/risk_alchohol.jpg">';
 	} else {
-		document.getElementById("here1").innerHTML='<img src="img/risk_tobacco.jpg">';
+		document.getElementById("here1").innerHTML='<img class="image" src="img/risk_tobacco.jpg">';
 	}
 
 }
@@ -114,8 +114,8 @@ function clickDemo(){
 	}
 
 	if (type.value == "1"){
-		document.getElementById("here2").innerHTML='<img src="img/rateofnewdeath.jpg">';
+		document.getElementById("here2").innerHTML='<img class="image" src="img/rateofnewdeath.jpg">';
 	} else  {
-		document.getElementById("here2").innerHTML='<img src="img/rate_cancer.jpg">';
+		document.getElementById("here2").innerHTML='<img class="image" src="img/rate_cancer.jpg">';
 	}
 }
