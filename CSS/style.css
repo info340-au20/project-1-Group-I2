@@ -334,3 +334,7 @@ footer p {
   margin: 3rem;
   background-color: wheat;
 }
+.card-img-top{
+  width:100%;
+  height:auto;
+}
