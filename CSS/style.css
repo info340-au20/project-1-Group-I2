@@ -124,7 +124,6 @@ div.title{
 .intro{
   padding: 2rem;
   background-size: 1400px 800px;
-  background-image:url('../img/map.jpg');
   opacity: 60%;
   color: black;
 }
@@ -138,18 +137,16 @@ header div p span{
 }
 
 
-.title2 h1{
-  color:rgba(219, 219, 93, 0.966);
-  text-align: center;
-  text-transform: uppercase;
+.title2{
   background-color: black;
-  margin: 0%;
+  height: 5px;
   opacity: 80%;
 }
 
 .responsive {
   width: 100%;
   height: auto;
+  padding: 10px;
 }
 
 .footer-top{
@@ -349,3 +346,50 @@ footer p {
 #here1, #here2{
   padding: 5%;
 }
+
+.title_container{
+  position: center;
+}
+
+
+
+/* By Lexi, add people info */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: auto;
+  padding: 0 10px;
+  
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+  margin: 0 -5px;
+  padding: 2%;
+  padding-left: 8%;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);  /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.icon-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);  /* this adds the "card" effect */
+  padding: 16px;
+  background-color: white;
+  width: 95px;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
